@@ -21,6 +21,21 @@
     }
   }
 
+  &__register__link {
+    text-align: center;
+    color: #ADADAD;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+  }
+
+  .button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    width: 100%;
+  }
+
   .block {
     width: 430px;
   }
