@@ -8,6 +8,7 @@
   &__top {
     text-align: center;
     margin-bottom: 50px;
+
     h2 {
       font-size: 28px;
       margin-bottom: 5px;
@@ -26,6 +27,23 @@
     color: #ADADAD;
     letter-spacing: 0.1px;
     font-size: 16px;
+  }
+
+  &__success-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    p {
+      color: #ADADAD;
+    }
   }
 
   .button {
