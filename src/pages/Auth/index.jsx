@@ -1,9 +1,9 @@
 import React from 'react';
 import './Auth.scss'
-import {LoginForm, RegisterForm} from './../../modules';
+import {LoginForm, RegisterForm} from './../../modules/index';
 import {Route} from "react-router-dom";
 
-function Auth(props) {
+function Auth() {
     return (
         <section className={'auth'}>
             <div className={'auth__content'}>
