@@ -1,9 +1,9 @@
 import React from 'react';
-import './Auth.scss'
 import {Route} from "react-router-dom";
 import {LoginForm, RegisterForm} from "../../modules";
+import './Auth.scss'
 
-function Auth() {
+const Auth = () => {
     return (
         <section className={'auth'}>
             <div className={'auth__content'}>
@@ -12,9 +12,10 @@ function Auth() {
             </div>
         </section>
     )
-}
+};
 
 export default Auth;
+
 
 
 

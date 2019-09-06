@@ -6,11 +6,10 @@ import classNames from 'classnames';
 
 const Button = (props) => {
     return (
-        <div>
             <BaseButton
                 {...props}
-                className={classNames('button', props.className, {'button--large': props.size === 'large'})}/>
-        </div>
+                className={classNames('button', props.className, {'button--large': props.size === 'large'})}
+            />
     )
 };
 

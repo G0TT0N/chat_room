@@ -18,7 +18,7 @@
       width: 33px;
       height: 33px;
       margin-right: 13px;
-      margin-bottom: 33px;
+      margin-bottom: 25px;
     }
   }
 
@@ -38,6 +38,13 @@
   &__text {
     color: #fff;
     line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  &__icon-readed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 
   &__attachments {

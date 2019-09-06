@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Form, Icon, Input} from 'antd';
-import {Link, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {Block, Button} from "../../../components";
 
 
 class RegisterForm extends Component {
     render() {
-        const success = true;
+        const success = false;
         return (
             <div>
                 <div className={'auth__top'}>
