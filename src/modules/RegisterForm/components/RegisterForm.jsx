@@ -26,6 +26,7 @@ const RegisterForm = (props) => {
                         <Form onSubmit={handleSubmit} className="login-form">
                             <Form.Item
                                 validateStatus={!touched.email ? '' : errors.email ? 'error' : 'success'}
+                                help={!touched.email ? '' : errors.email}
                                 hasFeedback
                             >
                                 <Input
@@ -45,23 +46,38 @@ const RegisterForm = (props) => {
                                     size="large"
                                 />
                             </Form.Item>
-                            <Form.Item>
+                            <Form.Item
+                                validateStatus={!touched.password ? '' : errors.password ? 'error' : 'success'}
+                                help={!touched.password ? '' : errors.password}
+                                hasFeedback
+                            >
                                 <Input
                                     prefix={<Icon type="lock" style={{color: 'rgba(0,0,0,.25)'}}/>}
                                     type="password"
                                     placeholder="Пароль"
                                     size="large"
+                                    id={'password'}
+                                    value={values.password}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
                                 />
                             </Form.Item>
-                            <Form.Item>
+                            <Form.Item
+                                validateStatus={!touched.rePassword ? '' : errors.rePassword ? 'error' : 'success'}
+                                help={!touched.rePassword ? '' : errors.rePassword}
+                                hasFeedback
+                            >
                                 <Input
                                     prefix={<Icon type="lock" style={{color: 'rgba(0,0,0,.25)'}}/>}
                                     type="password"
                                     placeholder="Повторите пароль"
                                     size="large"
+                                    id={'rePassword'}
+                                    value={values.rePassword}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
                                 />
                             </Form.Item>
-
                             <Form.Item>
                                 <Button type="primary"
                                         htmlType="submit"
@@ -85,7 +101,6 @@ const RegisterForm = (props) => {
             </Block>
         </div>
     )
-
-}
+};
 
 export default RegisterForm;
