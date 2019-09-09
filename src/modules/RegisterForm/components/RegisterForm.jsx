@@ -2,6 +2,7 @@ import React from 'react';
 import {Form, Icon, Input} from 'antd';
 import {Link} from 'react-router-dom';
 import {Block, Button} from "../../../components";
+import {validateField} from "../../../utils/helper";
 
 const success = false;
 
@@ -25,7 +26,7 @@ const RegisterForm = (props) => {
                     ? (
                         <Form onSubmit={handleSubmit} className="login-form">
                             <Form.Item
-                                validateStatus={!touched.email ? '' : errors.email ? 'error' : 'success'}
+                                validateStatus={validateField('email', touched, errors)}
                                 help={!touched.email ? '' : errors.email}
                                 hasFeedback
                             >
@@ -47,7 +48,7 @@ const RegisterForm = (props) => {
                                 />
                             </Form.Item>
                             <Form.Item
-                                validateStatus={!touched.password ? '' : errors.password ? 'error' : 'success'}
+                                validateStatus={validateField('password', touched, errors)}
                                 help={!touched.password ? '' : errors.password}
                                 hasFeedback
                             >
@@ -63,8 +64,8 @@ const RegisterForm = (props) => {
                                 />
                             </Form.Item>
                             <Form.Item
-                                validateStatus={!touched.rePassword ? '' : errors.rePassword ? 'error' : 'success'}
-                                help={!touched.rePassword ? '' : errors.rePassword}
+                                validateStatus={validateField('password', touched, errors)}
+                                help={!touched.password ? '' : errors.password}
                                 hasFeedback
                             >
                                 <Input
@@ -72,10 +73,10 @@ const RegisterForm = (props) => {
                                     type="password"
                                     placeholder="Повторите пароль"
                                     size="large"
-                                    id={'rePassword'}
-                                    value={values.rePassword}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
+                                    // id={'rePassword'}
+                                    // value={values.rePassword}
+                                    // onChange={handleChange}
+                                    // onBlur={handleBlur}
                                 />
                             </Form.Item>
                             <Form.Item>
