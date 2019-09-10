@@ -2,12 +2,28 @@ import React, {Component} from 'react';
 import './Home.scss'
 import {Message, DialogItem} from "../../components";
 
+const date = new Date(2016, 0, 1);
+
 class Home extends Component {
     render() {
-        const date = new Date(2016, 0, 1);
         return (
             <section className={'home'}>
-                <DialogItem/>
+                <div className="dialogs">
+                    <DialogItem
+                        user={{
+                            fullname: 'Лев Толстой',
+                            isOnline: true
+                        }}
+                        unreaded={110}
+                    />
+                    <DialogItem
+                        user={{
+                            fullname: 'Лев Толстой',
+                            isOnline: false
+                        }}
+                        unreaded={0}
+                    />
+                </div>
 
                 {/*<Dialogs
                     items={[
@@ -17,7 +33,7 @@ class Home extends Component {
                                 avatar: null,
                             },
                             message: {
-                                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolores eligendi eos facilis fuga ipsum iusto magni natus neque officiis quos, repellat soluta tempore ullam vel veritatis voluptate. Iure, voluptate!'
+                                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dolores eligendi eos facilis fuga ipsum iusto magni natus neque officiis quos, repellat soluta tempore ullam vel veritatis voluptate. Iure, voluptate!',
                                 isReaded: false,
                                 created_at: date
                             }
