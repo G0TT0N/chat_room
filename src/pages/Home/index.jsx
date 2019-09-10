@@ -31,6 +31,15 @@ function Home() {
                      isReaded={false}
 
             />
+            <Message avatar={'https://sun1-87.userapi.com/c852016/v852016997/1b674f/ybYJetYzEIk.jpg?ava=1'} isTyping/>
+            <Message avatar={'https://sun1-87.userapi.com/c852016/v852016997/1b674f/ybYJetYzEIk.jpg?ava=1'}
+                     attachments={[
+                         {
+                             falename: 'image.jpg',
+                             url: 'http://source.unsplash.com/100x100/?random-1&nature,water'
+                         }
+                     ]}
+            />
         </section>
     )
 }
