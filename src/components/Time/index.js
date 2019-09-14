@@ -5,10 +5,7 @@ import ruLocale from 'date-fns/locale/ru';
 
 const Time = ({date}) => (
     <Fragment>
-        {
-            formatDistanceToNow(date, {addSuffix: true, locale: ruLocale})
-        }
-
+        {formatDistanceToNow(date, {addSuffix: true, locale: ruLocale})}
     </Fragment>
 );
 
