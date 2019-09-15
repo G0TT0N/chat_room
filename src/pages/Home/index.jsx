@@ -30,6 +30,11 @@ const Home = () => (
                 }
             ]}
         />
+        <Message avatar={'https://sun1-87.userapi.com/c852016/v852016997/1b674f/ybYJetYzEIk.jpg?ava=1'}
+                 isMe={''}
+                 date={new Date()}
+                 audio={'https://notificationsounds.com/soundfiles/069059b7ef840f0c74a814ec9237b6ec/file-de_vuvuzela-power-down.wav'}
+        />
         {/*<Message avatar={'https://sun1-87.userapi.com/c852016/v852016997/1b674f/ybYJetYzEIk.jpg?ava=1'}
                  text={'Салам, Брут! Чё, как, уничтожил флот галлов? 🖐🏻'}
                  date={new Date()}

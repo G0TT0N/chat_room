@@ -10,10 +10,8 @@ const Dialogs = ({items, userId}) => (
             .map(item => (
                 <DialogItem
                     key={item._id}
-                    user={item.user}
-                    message={item}
-                    unreaded={110}
                     isMe={item.user._id === userId}
+                    {...item}
                 />
             ))}
     </div>

@@ -74,6 +74,56 @@
     }
   }
 
+  &--is-audio {
+    #{$self}__bubble {
+      width: 250px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #{$self}__audio {
+      &-info {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-btn {
+        button {
+          width: 28px;
+          height: 28px;
+          border: none;
+          border-radius: 30px;
+          background: #0f3997;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            height: 13px;
+          }
+        }
+      }
+      &-duration{
+        color: #ffffff;
+        font-weight: bold;
+        opacity: 0.5;
+        font-size: 12px;
+      }
+
+      &-progress{
+        background-color: #418FFF;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40%;
+        height: 100%;
+      }
+    }
+  }
+
   &--isme {
     display: flex;
     flex-direction: row-reverse;
@@ -116,7 +166,7 @@
   }
 
   &--image {
-    #{$self}__attachments{
+    #{$self}__attachments {
       &-item {
         img {
           width: 150px;
