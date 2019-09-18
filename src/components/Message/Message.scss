@@ -75,6 +75,10 @@
   }
 
   &--is-audio {
+    audio {
+      display: none;
+    }
+
     #{$self}__bubble {
       width: 250px;
       position: relative;
@@ -106,20 +110,22 @@
           }
         }
       }
-      &-duration{
+
+      &-duration {
         color: #ffffff;
         font-weight: bold;
         opacity: 0.5;
         font-size: 12px;
       }
 
-      &-progress{
+      &-progress {
         background-color: #418FFF;
         position: absolute;
         left: 0;
         top: 0;
         width: 40%;
         height: 100%;
+        transition: width 0.3s ease;
       }
     }
   }

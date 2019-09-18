@@ -1,5 +1,4 @@
 import React from 'react';
-import './Dialogs.scss';
 import {DialogItem} from "../index";
 import orderBy from 'lodash/orderBy';
 

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://g0tt0n.github.io/chat_room",
   "name": "chat_room",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "antd": "^3.23.2",
     "classnames": "^2.2.6",
     "date-fns": "^2.0.1",
+    "eslint-plugin-react-hooks": "^2.0.1",
     "formik": "^1.5.8",
+    "gh-pages": "^2.1.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
@@ -20,7 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +41,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }
