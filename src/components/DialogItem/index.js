@@ -1,7 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 import './DialogItem.scss';
-import {IconReaded} from './../index';
+import {IconReaded, Avatar} from './../index';
 import format from 'date-fns/format';
 import isToday from 'date-fns/isToday';
 
@@ -12,17 +12,6 @@ const getMessageTime = created_at => {
     } else {
         return format(created_at, "dd.MM.yy")
     }
-
-};
-
-const getAvatar = (avatar) => {
-    if (avatar) {
-        return (
-            <img src={avatar} alt=""/>
-        )
-    } else {
-        // make ava
-    }
 };
 
 const DialogItem = ({user, unreaded, isMe, created_at, text}) => (
@@ -30,8 +19,7 @@ const DialogItem = ({user, unreaded, isMe, created_at, text}) => (
         'dialogs__item--online': user.isOnline
     })}>
         <div className="dialogs__item-avatar">
-            {/*<img src={user.avatar} alt={'user avatar'}/>*/}
-            {getAvatar(user.avatar)}
+            <Avatar user={user}/>
         </div>
         <div className="dialogs__item-info">
             <div className="dialogs__item-info-top">

@@ -2,7 +2,7 @@ import React from 'react';
 import {Form, Icon, Input} from 'antd';
 import {Link} from 'react-router-dom';
 import {Block, Button} from "../../../components";
-import {validateField} from "../../../utils/helper";
+import {validateField} from "../../../utils/helpers";
 
 const success = false;
 

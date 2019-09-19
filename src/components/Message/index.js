@@ -6,10 +6,9 @@ import {IconReaded, Time} from './../index'
 import waveSvg from '../../assets/img/wave.svg';
 import playSvg from '../../assets/img/play.svg';
 import pauseSvg from '../../assets/img/pause.svg';
-import {convertCurrentTime} from "../../utils/helper";
+import {convertCurrentTime} from "../../utils/helpers";
 
 const MessageAudio = ({audioSrc}) => {
-    debugger
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
