@@ -1,8 +1,13 @@
 @import "~reset-css";
 @import '~antd/dist/antd.css';
+@import './layouts/chat';
 
 * {
   outline: none;
+}
+
+body {
+  background-color: #F4F7FD;
 }
 
 body, html, #root, .wrapper {

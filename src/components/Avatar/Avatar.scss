@@ -4,10 +4,13 @@
   border-radius: 50%;
 
   &--symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #ffffff;
     text-align: center;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 36px;
     font-size: 18px;
   }
 }
