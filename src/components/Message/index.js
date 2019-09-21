@@ -109,7 +109,7 @@ const Message = ({
                     {attachments &&
                     <div className="message__attachments">
                         {attachments.map(item => (
-                            <div className="message__attachments-item">
+                            <div key={item.url} className="message__attachments-item">
                                 <img src={item.url} alt={item.filename}/>
                             </div>
                         ))}
@@ -135,7 +135,7 @@ Message.propTypes = {
     isReaded: PropTypes.bool,
     avatar: PropTypes.string,
     text: PropTypes.string,
-    date: PropTypes.string,
+    date: PropTypes.object,
     user: PropTypes.object,
     attachments: PropTypes.array,
     isTyping: PropTypes.bool,
