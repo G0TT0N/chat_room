@@ -12,7 +12,7 @@ const ChatInput = () => {
             </div>
             <Input
                 placeholder="Введите текст сообщения..."
-                onSearch={value => console.log(value)}
+                // onSearch={value => console.log(value)}
                 size={"large"}
                 onChange={event => setValue(event.target.value)}
             />
