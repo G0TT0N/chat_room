@@ -1,5 +1,5 @@
 import React from 'react';
-import {Icon, Input} from 'antd';
+import {Icon, Input, Button} from 'antd';
 import './Home.scss'
 import {ChatInput, Dialogs, Message, Status} from "../../components";
 
@@ -13,7 +13,7 @@ const Home = () => (
                         <Icon type="usergroup-add"/>
                         <span>Список диалогов</span>
                     </div>
-                    <Icon type="form"/>
+                    <Button type={"link"} shape={"circle"} icon="form"/>
                 </div>
                 <div className="chat__sidebar-search">
                     <Input.Search
@@ -150,7 +150,7 @@ const Home = () => (
                             <Status online={true}/>
                         </div>
                     </div>
-                    <Icon type="ellipsis" style={{fontSize: '22px'}}/>
+                    <Button type={"link"} shape={"circle"} icon="ellipsis"/>
                 </div>
                 <div className="chat__dialog-messages">
                     <Message avatar={'https://sun1-87.userapi.com/c852016/v852016997/1b674f/ybYJetYzEIk.jpg?ava=1'}

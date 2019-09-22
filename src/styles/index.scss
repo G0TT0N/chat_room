@@ -17,4 +17,20 @@ body, html, #root, .wrapper {
   font-size: 14px;
 }
 
+.ant-btn-circle {
+  border: 0;
+  box-shadow: none;
+  color: #202020;
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+    color: inherit;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
 
