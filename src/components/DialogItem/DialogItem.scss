@@ -3,6 +3,17 @@
 .dialogs {
   width: 300px;
 
+  &__search {
+    padding: 20px;
+
+    .ant-input {
+      height: 38px;
+      padding: 4px 11px 6px;
+      background-color: #F7F8F9;
+      border: 0;
+    }
+  }
+
   &__item {
     display: flex;
     margin-bottom: 20px;
@@ -56,6 +67,7 @@
         }
         span {
           opacity: 0.5;
+          margin-right: 10px;
         }
       }
       &-bottom {

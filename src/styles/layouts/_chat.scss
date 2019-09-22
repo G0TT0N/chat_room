@@ -26,22 +26,13 @@
       }
     }
 
-    &-search {
-      padding: 20px;
-
-      .ant-input {
-        height: 38px;
-        padding: 4px 11px 6px;
-        background-color: #F7F8F9;
-        border: 0;
-      }
-    }
-
     &-dialogs {
       height: calc(100% - 136px);
+
       .dialogs {
         height: 100%;
         overflow: auto;
+
         &__item {
           padding: 10px 20px;
           margin-bottom: 0;

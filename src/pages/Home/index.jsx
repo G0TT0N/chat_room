@@ -1,13 +1,13 @@
 import React from 'react';
-import {Icon, Input, Button} from 'antd';
+import {Icon, Button} from 'antd';
 import './Home.scss'
-import {ChatInput, Dialogs, Message, Status} from "../../components";
+import {ChatInput, Message, Status} from "../../components";
+import {Dialogs} from "../../containers";
 
 const Home = () => (
     <section className={'home'}>
         <div className="chat">
             <div className="chat__sidebar">
-
                 <div className="chat__sidebar-header">
                     <div>
                         <Icon type="usergroup-add"/>
@@ -15,13 +15,6 @@ const Home = () => (
                     </div>
                     <Button type={"link"} shape={"circle"} icon="form"/>
                 </div>
-                <div className="chat__sidebar-search">
-                    <Input.Search
-                        placeholder="Поиск среди контактов"
-                        onSearch={value => console.log(value)}
-                    />
-                </div>
-
                 <div className="chat__sidebar-dialogs">
                     <Dialogs
                         userId={0}
@@ -140,7 +133,6 @@ const Home = () => (
                     />
                 </div>
             </div>
-
             <div className="chat__dialog">
                 <div className="chat__dialog-header">
                     <div/>
@@ -203,11 +195,8 @@ const Home = () => (
                 </div>
             </div>
         </div>
-
-
     </section>
 );
-
 
 export default Home;
 
