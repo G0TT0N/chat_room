@@ -135,7 +135,7 @@ Message.propTypes = {
     isReaded: PropTypes.bool,
     avatar: PropTypes.string,
     text: PropTypes.string,
-    date: PropTypes.object,
+    created_at: PropTypes.string,
     user: PropTypes.object,
     attachments: PropTypes.array,
     isTyping: PropTypes.bool,
