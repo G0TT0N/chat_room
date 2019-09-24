@@ -3,7 +3,6 @@ import {Icon, Button} from 'antd';
 import './Home.scss'
 import {ChatInput, Messages, Status} from "../../components";
 import {Dialogs} from "../../containers";
-import dialogsJSON from '../../utils/dialogs';
 
 const Home = () => (
     <section className={'home'}>
@@ -17,10 +16,7 @@ const Home = () => (
                     <Button type={"link"} shape={"circle"} icon="form"/>
                 </div>
                 <div className="chat__sidebar-dialogs">
-                    <Dialogs
-                        userId={0}
-                        items={dialogsJSON}
-                    />
+                    <Dialogs userId={0}/>
                 </div>
             </div>
             <div className="chat__dialog">
